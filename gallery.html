@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>Responsive</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    /* mobile */
+    @media screen and (max-width: 1023px) {
+      .gallery {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 3px;
+      }
+
+      .photo img {
+        width: 100%;
+      }
+    }
+
+    /* desktop */
+    @media screen and (min-width: 1024px) {
+      .gallery {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 28px;
+        max-width: 935px;
+      }
+
+      .photo img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="gallery">
+    <div class="photo">
+      <img src="assets/img01.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img02.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img03.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img04.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img05.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img06.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img07.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img08.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img09.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img10.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img11.jpg">
+    </div>
+    <div class="photo">
+      <img src="assets/img12.jpg">
+    </div>
+  </div>
+
+</body>
+
+</html>
