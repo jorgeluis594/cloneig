@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Responsive</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+
+    /* mobile */
+    @media screen and (max-width: 1023px) {
+      .gallery-nav {
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        border: 1px solid #DBDBDB;
+
+
+      }
+
+      .gallery-button {
+        width: 33.3%;
+        text-align: center;
+      }
+
+      .gallery-button img {
+        margin: auto;
+      }
+
+      .gallery-button p {
+        display: none;
+      }
+
+    }
+
+    /* desktop */
+    @media screen and (min-width: 1024px) {
+      .gallery-nav {
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+      }
+
+      .gallery-button {
+        width: 120px;
+        text-align: center;
+      }
+
+      .gallery-button img {
+        display: none;
+      }
+
+      .gallery-button p {
+        margin-top: 18px;
+      }
+
+      .gallery-nav .unselected {
+        opacity: 0.3;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="gallery-nav">
+    <div class="gallery-button">
+      <img src="./assets/posts.png">
+      <p>__________</p>
+      <p>POSTS</p>
+    </div>
+    <div class="gallery-button">
+      <img src="./assets/igtv.png">
+      <p class="unselected">__________</p>
+      <p class="unselected">IGTV</p>
+    </div>
+    <div class="gallery-button">
+      <img src="./assets/tagged.png">
+      <p class="unselected">__________</p>
+      <p class="unselected">TAGGED</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
